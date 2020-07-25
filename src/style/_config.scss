@@ -1,0 +1,14 @@
+$secondary: #2c58e9;
+$primary-color: #272727;
+$secondary-color:#ff652f;
+$tertiary-color: #fff;
+$dark: darkgrey;
+$color: #ff652f;
+
+@mixin font-stack {
+          font-family: cursive; 
+                 
+       }
+       @mixin transition-ease {
+         transition: all 0.1s ease-in-out;
+       }

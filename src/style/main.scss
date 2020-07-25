@@ -1,0 +1,120 @@
+@import 'config';
+@import  '~bootstrap/scss/bootstrap';
+
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+}
+header {
+   width: 100%;
+   padding: 0.5vh;
+   background: rgb(48, 76, 236);
+   
+}
+.container-fluid {
+  width: 100wv;
+  background:
+  linear-gradient(
+        to right,
+        rgba($primary-color, 0.1 ),
+        rgba($primary-color, 0.3)
+    );
+      background-size: cover;    
+  padding-bottom: 2rem;
+  text-align: center;
+  font-weight: 700;
+  .home{
+    margin: auto;
+    margin-top: 0;
+    line-height: 2;
+    .card {
+      color: $primary-color;
+       margin-left: 1.5rem;
+       margin-top: 1rem;
+       margin-bottom: 3rem;
+       display: inline-block;
+    }
+  }
+ #title {
+   padding: 6px 12px;
+   padding-top: 1em;
+   padding-bottom: 1.5em;
+ }
+h3{
+  margin-top: 1px;
+  padding-bottom: 2rem;
+
+}
+h4 {
+  text-align: left;
+  margin-left: 8em;
+  margin-bottom: 1em;
+  font-weight: 700;
+
+}
+h1 {
+  color: $secondary-color;
+}
+img { 
+  width: 400px;
+  margin: auto;
+  perspective: floor($number: 3);  
+ }
+}
+#p {
+  font-weight: 700;
+  font-size: 38px;
+  font-family: 'Courier New', Courier, monospace;
+  padding-top: 1em;
+}
+nav {
+  font-weight: 700;
+  height: 15vh;
+  font-size: large;  
+.navbar-brand {
+  width: 39px;
+  opacity: 5px;
+  font-weight: 500;
+  background: darken($color: #000000, $amount: 1);
+}
+ul, li a {
+  padding: 6px 12px;
+  @include transition-ease;
+  &:hover{
+    color: #ff652f;
+  }
+ }
+}
+.from, form {
+   padding-right: 7rem;
+   padding-bottom: 1rem;
+}
+button {
+ width: 15vw;
+ margin-top: 1rem;
+ padding-bottom: 5rem;
+ margin-bottom: 1rem;
+ float: left;
+
+}
+footer{
+  margin-left: 3rem;
+  margin-right: 3rem;
+  margin-bottom: 0.5rem;
+  background: darken($color: #66667667, $amount: 0);
+  align-items: center;
+  text-align: center;
+.carousel slide {
+  width: 40vw;
+  height: 5vh;
+  margin-top: 2rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  opacity: 0px;
+}
+}
+
