@@ -10,7 +10,7 @@
     "build": "webpack --config webpack.prod.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Emmanuel Nodolomwanyi",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.10.4",

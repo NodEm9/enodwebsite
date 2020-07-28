@@ -6,9 +6,11 @@ module.exports = {
    entry: {
             main: "./src/index.js",
             vendor: "./src/vendor.js",
-             home: './app/home.js',
-             about: './app/about.js',
-             contact: './app/contact.js'
+            home: './src/app/home.js',
+            contact: './src/app/contact.js', 
+            about: './src/app/about.js',
+            
+          
    },
    devtool: "inline-source-map",
    module: {
@@ -38,5 +40,8 @@ module.exports = {
                     options: { minimize: true }
           }
       ]
-   }
+   },
+   //To generate JSON file containing webpack records
+   recordsPath: path.join(__dirname, 'records.json'),
+   name: 'admin-app'
 };

@@ -1,1 +1,1 @@
-alert(`Hello! From Home`)
+console.log('This is homepage')

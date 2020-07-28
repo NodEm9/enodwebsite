@@ -3,7 +3,9 @@ const { merge } = require('webpack-merge');
 const common = require('./webpack.common');
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-
+const CompressionPlugin = require("compression-webpack-plugin");
+const zlib = require('zlib');
+const zopfli = require('@gfx/zopfli');
 
 
 
@@ -16,6 +18,9 @@ module.exports = merge(common, {
           output: {
            filename: "[name].bundle.js",
            path: path.resolve(__dirname, "dist")        
+          },
+          amd: {
+            jQuery: true
           },
           module: {
              rules: [
@@ -34,13 +39,32 @@ module.exports = merge(common, {
              new HtmlWebpackPlugin({
                 template: "./src/template.html"
              }),
-             new CompressionPlugin({
-               test: /\.js(\?.*)?$/i,
-               include: /\/includes/,
-               threshold: 8192,
-               compressionOptions: {
-                 numiterations: 15,
-               }
-             })
+             new CompressionPlugin ({
+               filename: '[path].gz[query]',
+               algorithm: 'gzip',
+               test: /\.js$|\.css$|\.html$/,
+               threshold: 10240,
+               minRatio: 0.8,
+               algorithm(input, compressionOptions, callback) {
+               return zopfli.gzip(input, compressionOptions, callback);
+             }
+           }),
+           //Multiple compression of assets for different algorithm
+           new CompressionPlugin({
+             filename: '[path].br[query]',
+             algorithm: 'brotliCompress',
+             test: /\.(js|css|html|svg)$/,
+             compressionOptions: {
+               // zlib’s `level` option matches Brotli’s `BROTLI_PARAM_QUALITY` option.
+               level: 11,
+               numiterations: 15,
+             },
+             threshold: 10240,
+             minRatio: 0.8,
+             deleteOriginalAssets: false,
+             include: /\/includes/,
+             cache: true, 
+             cache: 'path/to/cache'
+            }),
         ]
        });
