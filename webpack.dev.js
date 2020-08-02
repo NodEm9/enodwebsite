@@ -37,7 +37,8 @@ module.exports = merge(common, {
           plugins: [ 
              new MiniCssExtractPlugin({}),
              new HtmlWebpackPlugin({
-                template: "./src/template.html"
+                template: "./src/template.html",
+                template: "./src/template.contactpage.html"
              }),
              new CompressionPlugin ({
                filename: '[path].gz[query]',

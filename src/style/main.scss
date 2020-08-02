@@ -4,17 +4,21 @@
 
 body {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
+
+
 
 }
 header {
    width: 100%;
+   margin-left: none;
+   margin-right: none;
    padding: 0.5vh;
    background: rgb(48, 76, 236);
    
 }
-.container-fluid {
+.container {
   width: 100wv;
   background:
   linear-gradient(
@@ -27,7 +31,7 @@ header {
   text-align: center;
   font-weight: 700;
   .home{
-    margin: auto;
+    margin: 0 auto;
     margin-top: 0;
     line-height: 2;
     .card {
@@ -73,14 +77,16 @@ img {
 nav {
   font-weight: 700;
   height: 15vh;
-  font-size: large;  
-.navbar-brand {
+  font-size: large; 
+  background: rgb(48, 76, 236); 
+  color: darken($color: #000000, $amount: 10);
+&-navbar-brand {
   width: 39px;
   font-weight: 500;
-  background: darken($color: #000000, $amount: 1);
 }
 ul, li a {
-  padding: 6px 12px;
+  padding: 6px 12px 12px;
+  color: black;
   @include transition-ease;
   &:hover{
     color: #ff652f;
@@ -95,24 +101,24 @@ button {
  width: 15vw;
  margin-top: 1rem;
  padding-bottom: 5rem;
- margin-bottom: 1rem;
- float: left;
+ 
+
 
 }
 footer{
-  margin-left: 3rem;
-  margin-right: 3rem;
+  width: 100vw;
   margin-bottom: 0.5rem;
   background: darken($color: #66667667, $amount: 0);
   align-items: center;
   text-align: center;
+  position: relative;
 .carousel slide {
-  width: 40vw;
+  width: 100vw;
   height: 5vh;
   margin-top: 2rem;
+  position: absolute;
   align-items: center;
-  justify-content: center;
-  border-radius: 50px;
+  justify-content: right;
   opacity: 0px;
 }
 }

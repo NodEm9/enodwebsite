@@ -8,6 +8,7 @@ const TerserJSPlugin = require("terser-webpack-plugin");
 const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const CompressionPlugin = require('compression-webpack-plugin');
+const Handlebars = require('handlebars');
 const zlib = require('zlib');
 const zopfli = require('@gfx/zopfli');
 
@@ -27,6 +28,8 @@ module.exports = {
          
          filename: '[name].[contenthash].bundle.js',
          path: path.resolve(__dirname, 'dist'),
+         publicPath: 'http://cdn.nodbey.com/[hash]/'
+
          
     },    
     optimization: {
@@ -47,6 +50,15 @@ module.exports = {
                  }
              
           }),
+          new HtmlWebpackPlugin({
+            template: './src/template.contact.html',
+            minify: {
+                 removeAttributeQuote: true,
+                 collapseWhitespace: true,
+                 removeComments: true
+              }
+          
+       }),
             new CompressionPlugin ({
               filename: '[path].gz[query]',
               algorithm: 'gzip',
@@ -76,13 +88,15 @@ module.exports = {
        ],
     module: {
           rules: [
+            { test: /\.jpg$/, loader: 'file-loader' },
+            { test: /\.png$/, loader: 'url-loader' },   
             {
                 test: /\.scss$/,
                 use: [
                       MiniCssExtractPlugin.loader, // Extracts Css in files
                      'css-loader', // Turns css into common.js
                      'sass-loader' // Turns sass into css          
-             ] 
+             ]
             }
         ]
       },

@@ -1,6 +1,6 @@
 
 
-export const run = (ComponentService)=> {
+export const run = (ComponentService, HomePage, ContactPage)=> {
               
       
 

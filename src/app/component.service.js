@@ -1,6 +1,8 @@
+import { ContactPage } from '../contact';
+import { run } from './app';
 
 export  class ComponentService {
-   constructor(){
+   constructor(contactPage){
        const inputGroup = document.querySelector('.input-group');
        const form = inputGroup.querySelectorAll('.form');
        const  submitBtn = form[0].querySelector('button[type="submit"]');
@@ -29,7 +31,11 @@ export  class ComponentService {
                  
              }, false);
 
-                
-
- }
+           let navbarToggler = document.querySelector('.navbar-toggler');
+           let nav = document.querySelector('.navbar');
+           navbarToggler.color = 'red';
+        
+   }
 }
+
+

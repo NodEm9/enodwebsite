@@ -6,9 +6,9 @@
           <title>Emmanuel Website</title>
 </head>
 <body> 
+<div class="container-fluid">
   <header class="header">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#"><img  class="img-fluid" src="./assets/m-logo2.jpg" alt="logo"></a>
+    <nav class="navbar navbar-expand-md" >
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -23,12 +23,15 @@
           <li class="nav-item">
             <a class="nav-link" href="#">About Me</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="template.contactpage.html">Contact Me</a>
+          </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Contents
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="#">Contact</a>
+              <a class="dropdown-item" href="template.contactpage.html">Contact</a>
               <a class="dropdown-item" href="#">Projects action</a>
               <a class="dropdown-item" href="#">About Me</a>
             </div>
@@ -37,15 +40,14 @@
       </div>
     </nav>
   </header>
-<div class="container-fluid">
 <section class="home">
 <div class="row">
   <div class="col-md-6">
-    <div id="p">
-      <p>I build websites and apps</p>
+    <div>
+      <p class="title">I build websites and apps</p>
     </div>
     <div class="row">
-    <img src="./assets/model-seaside.jpg" class="img-fluid"  alt="EN">
+    <img src="./assets/img-en.jpg" class="img-fluid"  alt="EN">
     </div>
   </div>
 <div class="col-md-6">
@@ -88,9 +90,14 @@
 </div>
 </div>
 </section>
-</div>
-<section class="container-fluid">
+<!--Footer-->
+<section>
   <footer>
+    <div class="row">
+      <div class="col-md-6">
+        <p>Ativities</p>
+      </div>
+      <div class="col-md-6">
     <a href="#" class="btn btn-primary" style="padding: 0.8em; width: 14rem; margin-top: 1em; margin-bottom: 1em;">
       See my work <i class="fas fa-eye"></i></a>
     <div class="row">
@@ -118,8 +125,10 @@
       </div>
      </div>
   </div>
+      </div>
   </footer>
 </section>
+</div>
 <script src="https://kit.fontawesome.com/f9f9d2cd10.js" crossorigin="anonymous"></script>
 </body>
 </html>

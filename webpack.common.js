@@ -1,4 +1,7 @@
 const path = require("path");
+const Handlebars = require('handlebars');
+
+
 
 
 module.exports = {
@@ -7,7 +10,7 @@ module.exports = {
             main: "./src/index.js",
             vendor: "./src/vendor.js",
             home: './src/app/home.js',
-            contact: './src/app/contact.js', 
+            contact: './src/contact.js',
             about: './src/app/about.js',
             
           
@@ -35,9 +38,29 @@ module.exports = {
             }
           }, 
           {
-                    test: /\.html$/,
-                    loader: 'html-loader',
-                    options: { minimize: true }
+                    test: /\.html$/i,
+                    use: ['file-loader?name=[name].[ext]', 'extract-loader', 'html-loader'],
+                    options: { 
+                         root: '.',
+                         minimize: true,
+                         esModule: 'true',
+                         preprocessor: async (content, loaderContext) => {
+                              let result;
+                  
+                              try {
+                                result = await Handlebars.compile(content)({
+                                  firstname: 'Value',
+                                  lastname: 'OtherValue',
+                                });
+                              } catch (error) {
+                                await loaderContext.emitError(error);
+                  
+                                return content;
+                              }
+                  
+                              return result;
+                            }
+               }
           }
       ]
    },
