@@ -1,9 +1,3 @@
-
-
-export const run = (ComponentService, HomePage, ContactPage)=> {
-              
-      
-
-
-
-}
+window.$ = require('jquery');
+  
+export const run = (ComponentService, HomePage, ContactPage)=> {};       

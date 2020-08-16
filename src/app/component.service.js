@@ -1,16 +1,16 @@
-import { ContactPage } from '../contact';
 import { run } from './app';
+import { ContactPage } from './contact';
+
 
 export  class ComponentService {
-   constructor(contactPage){
+   constructor(){
        const inputGroup = document.querySelector('.input-group');
        const form = inputGroup.querySelectorAll('.form');
        const  submitBtn = form[0].querySelector('button[type="submit"]');
 
        let showForm = [];
-          function getDataForm(e) {
-          
-             e.preventDefault();
+          function getDataForm(e) {  
+             e.preventDefault(); 
              let showForm = {
                 id: document.body.getElementsByTagName('label'),
                 label: document.querySelectorAll('input-group'), 
@@ -29,13 +29,10 @@ export  class ComponentService {
           
                     submitBtn.addEventListener('click', getDataForm, false);
                  
-             }, false);
+             }, false); 
 
-           let navbarToggler = document.querySelector('.navbar-toggler');
-           let nav = document.querySelector('.navbar');
-           navbarToggler.color = 'red';
-        
-   }
-}
+             } 
+             
+};  
 
 

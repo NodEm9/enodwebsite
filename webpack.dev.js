@@ -37,13 +37,12 @@ module.exports = merge(common, {
           plugins: [ 
              new MiniCssExtractPlugin({}),
              new HtmlWebpackPlugin({
-                template: "./src/template.html",
-                template: "./src/template.contactpage.html"
+                template: "./src/template.html"
              }),
              new CompressionPlugin ({
                filename: '[path].gz[query]',
                algorithm: 'gzip',
-               test: /\.js$|\.css$|\.html$/,
+               test: /\.js$|\.css$|\.html$|.hbs$/,
                threshold: 10240,
                minRatio: 0.8,
                algorithm(input, compressionOptions, callback) {
@@ -54,7 +53,7 @@ module.exports = merge(common, {
            new CompressionPlugin({
              filename: '[path].br[query]',
              algorithm: 'brotliCompress',
-             test: /\.(js|css|html|svg)$/,
+             test: /\.(js|css|html|hbs|svg)$/,
              compressionOptions: {
                // zlib’s `level` option matches Brotli’s `BROTLI_PARAM_QUALITY` option.
                level: 11,
@@ -63,8 +62,8 @@ module.exports = merge(common, {
              threshold: 10240,
              minRatio: 0.8,
              deleteOriginalAssets: false,
-             include: /\/includes/,
-             cache: true, 
+             include: /\/(assets\/js|assets\\js|node_modules\\|bower_components\\js)/,
+             cache: false, 
              cache: 'path/to/cache'
             }),
         ]

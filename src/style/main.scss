@@ -26,7 +26,7 @@ header {
         rgba($primary-color, 0.1 ),
         rgba($primary-color, 0.3)
     );
-      background-size: cover;    
+  background-size: cover;    
   padding-bottom: 2rem;
   text-align: center;
   font-weight: 700;
@@ -34,6 +34,7 @@ header {
     margin: 0 auto;
     margin-top: 0;
     line-height: 2;
+    @include font-face;
     .card {
       color: $primary-color;
        margin-left: 1.5rem;
@@ -42,11 +43,14 @@ header {
        display: inline-block;
     }
   }
- #title {
-   padding: 6px 12px;
-   padding-top: 1em;
-   padding-bottom: 1.5em;
- }
+  .title {
+    padding: 6px 12px;
+    padding-top: 1em;
+    padding-bottom: 5rem;
+    color: rgba($primary-color, 0.3);
+ 
+  } 
+ 
 h3{
   margin-top: 1px;
   padding-bottom: 2rem;
@@ -57,10 +61,19 @@ h4 {
   margin-left: 8em;
   margin-bottom: 1em;
   font-weight: 700;
+  color: red;
 
 }
 h1 {
+  margin-bottom: 5rem;
   color: $secondary-color;
+  .title2 {
+    padding: 6px 12px;
+    padding-top: 1em;
+    padding-bottom: 5rem;
+    color: chocolate;
+ 
+  }
 }
 img { 
   width: 400px;
