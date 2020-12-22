@@ -1,0 +1,106 @@
+@import  '~bootstrap/scss/bootstrap';
+@import 'config';
+
+.about { 
+ margin:  0 auto;
+ padding: 0;
+ text-align: center;
+ background-size: cover;
+ @include font-face;
+ #p {
+font-weight: 700;
+font-size: 38px;
+font-family: 'Courier New', Courier, monospace;
+padding-top: 1em;
+}      
+.c-heading{
+  padding-top: 2rem;
+}
+button {
+  width: 15vw;
+  margin-top: 1rem;
+}
+.bio-heading {
+  margin-top: 0.5rem;
+}
+.my-img {
+  width: 100px;
+  border: 0;
+  border-radius: 10px;
+  padding: 1rem;
+  float: left;
+  z-index: 2;
+  
+}
+}
+.navbar-nav{
+  font-weight: 700;
+  font-size: 1rem;
+ .nav-item {
+  padding: 2px 50px 2px; 
+  display: inline-block;
+  .nav-link{
+    @include transition-ease;
+  a:hover{
+    color: $color;
+  }
+  }
+ }
+}
+#brand-logo {
+  width: 40px; 
+  height: 30px;
+}
+#bio {
+  margin-top: 2rem;
+  .code{
+    font-size: 28px;
+  }
+}
+.social-icon {
+  align-items: flex-end;
+  text-align: right;
+}
+#footer-2{
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+  background: darken($color: #66667667, $amount: 0);
+  align-items: center;
+  text-align: center;
+}
+.quote-bio{
+  background:beige;
+  background-origin: padding-box;
+  opacity: 4;
+  box-shadow: 4px solid yellowgreen;
+  border-left: 5px solid;
+  border-top: 5px solid;
+  
+code {
+  color: green;
+  font-weight: 700;
+  z-index: 2;
+  font-size: 18px;
+  text-indent: 0.5%;
+  text-align: justify;
+  padding: 0.5rem;
+}
+&__item{
+  border-right: 5px solid;
+  border-left: 5px solid;
+  background: beige;
+  background-origin: padding-box;
+  text-indent: 0.5%;
+  text-align: justify;
+  padding: 0.5rem;
+}
+&_item {
+  border-right: 5px solid;
+  border-bottom: 5px solid;
+  background: beige;
+  background-origin: padding-box;
+  text-indent: 0.5%;
+  text-align: justify;
+  padding: 0.5rem;
+ }
+}
