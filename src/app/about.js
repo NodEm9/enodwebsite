@@ -1,10 +1,9 @@
+import '../style/main.scss';
+import '../style/about.scss';
 
 export class AboutMe  {
       constructor(){
          
-         let aboutme = document.querySelector('#bio');
-
-         aboutme.textContent = "My name is Emmanuel";
  }
 }
 
