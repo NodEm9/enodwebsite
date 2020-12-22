@@ -1,2 +1,3 @@
 
-export const run = (ComponentService, HomePage, ContactPage, AboutMe) => {};        
+export const run = (ComponentService, AboutMe) => {
+};        
