@@ -1,0 +1,78 @@
+@import  '~bootstrap/scss/bootstrap';
+@import 'config';
+
+.contact { 
+  margin:  0 auto;
+  padding: 0;
+  @include font-face;
+
+  #p {
+    font-weight: 700;   
+    font-size: 38px;
+    font-family: 'Courier New', Courier, monospace;
+    padding-top: 1em;
+  }  
+.c-heading{
+margin: 0 auto;
+padding-top: 1rem;
+padding-bottom: 1.5rem;
+}
+.c-heading-1{
+  margin: 0 auto;
+  padding-top: 0.5rem;
+  padding-bottom: 1rem;
+  }
+.form { 
+margin: 0 auto;
+width: 600px; 
+padding-bottom: 5rem;
+z-index: 2;
+font-weight: 700;                
+}
+button {
+width: 10vw;
+margin: auto;
+margin-top: 1rem;
+}
+}
+.navbar-nav{
+  font-weight: 700;
+  font-size: 1rem;
+ .nav-item {
+  padding: 2px 50px 2px; 
+  display: inline-block;
+  .nav-link{
+    @include transition-ease;
+  a:hover{
+    color: $color;
+  }
+  }
+ }
+}
+#brand-logo {
+  width: 40px; 
+  height: 30px;
+}
+// .social {
+//   margin-top: 3rem;
+//   margin-left: 10rem;
+//   padding: 2px 2px 2px;
+//   float: right;
+//   position: relative;
+// }
+#cDetail {
+  &__items {
+    float: left;
+    @include transition-ease;
+    a:hover {
+      color: $color;
+    }
+  }
+}
+#footer-2{
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+  background: darken($color: #66667667, $amount: 0);
+  align-items: center;
+  text-align: center;
+}
