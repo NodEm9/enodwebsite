@@ -1,37 +1,12 @@
-@import 'config';
 @import  '~bootstrap/scss/bootstrap';
+@import 'config';  
 
-
-body {
-  box-sizing: border-box;
-  margin: 0px;
-  padding: 0px;
-
-
-
-}
-header {
-   width: 100%;
-   margin-left: none;
-   margin-right: none;
-   padding: 0.5vh;
-   background: rgb(48, 76, 236);
-   
-}
-.container {
-  width: 100wv;
-  background:
-  linear-gradient(
-        to right,
-        rgba($primary-color, 0.1 ),
-        rgba($primary-color, 0.3)
-    );
-  background-size: cover;    
-  padding-bottom: 2rem;
-  text-align: center;
-  font-weight: 700;
-  .home{
-    margin: 0 auto;
+  .home {
+    background: url('/src/assets/model-seaside.jpg');
+    background-size: cover;    
+    padding-bottom: 2rem;
+    text-align: center;
+    font-weight: 700;
     margin-top: 0;
     line-height: 2;
     @include font-face;
@@ -42,15 +17,13 @@ header {
        margin-bottom: 3rem;
        display: inline-block;
     }
-  }
   .title {
+    font-size: 3rem;
     padding: 6px 12px;
     padding-top: 1em;
     padding-bottom: 5rem;
-    color: rgba($primary-color, 0.3);
- 
+    @include font-face;
   } 
- 
 h3{
   margin-top: 1px;
   padding-bottom: 2rem;
@@ -66,7 +39,9 @@ h4 {
 }
 h1 {
   margin-bottom: 5rem;
-  color: $secondary-color;
+  color: goldenrod;
+  font-weight: 700;
+  z-index: 2;
   .title2 {
     padding: 6px 12px;
     padding-top: 1em;
@@ -75,48 +50,29 @@ h1 {
  
   }
 }
-img { 
+/*img { 
   width: 400px;
   margin: auto;
   perspective: floor($number: 3);  
- }
+ }*/
+ #brand-logo {
+  width: 40px;
+
 }
 #p {
   font-weight: 700;
   font-size: 38px;
   font-family: 'Courier New', Courier, monospace;
   padding-top: 1em;
-}
-nav {
-  font-weight: 700;
-  height: 15vh;
-  font-size: large; 
-  background: rgb(48, 76, 236); 
-  color: darken($color: #000000, $amount: 10);
-&-navbar-brand {
-  width: 39px;
-  font-weight: 500;
-}
-ul, li a {
-  padding: 6px 12px 12px;
-  color: black;
-  @include transition-ease;
-  &:hover{
-    color: #ff652f;
-  }
- }
-}
+}  
 .from, form {
-   padding-right: 7rem;
+   padding-right: 0rem;
    padding-bottom: 1rem;
 }
 button {
  width: 15vw;
  margin-top: 1rem;
- padding-bottom: 5rem;
- 
-
-
+ padding-bottom: 0rem;
 }
 footer{
   width: 100vw;
@@ -133,6 +89,24 @@ footer{
   align-items: center;
   justify-content: right;
   opacity: 0px;
+   }
+  }
 }
+.navbar-nav{
+  font-weight: 700;
+  font-size: 1rem;
+ .nav-item {
+  padding: 2px 50px 2px; 
+  display: inline-block;
+  .nav-link{
+    @include transition-ease;
+  a:hover{
+    color: $color;
+  }
+  }
+ }
 }
-
+#brand-logo {
+  width: 40px; 
+  height: 30px;
+}
