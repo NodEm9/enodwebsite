@@ -1,8 +1,13 @@
+// import { bootstrap } from 'bootstrap';
+import '../style/main.scss';
+import '../style/contact.scss';
 
- export class ContactPage {
-     constructor(){
-          let contact = document.querySelector('.contact');
-          let h2 = contact.querySelector('h2'); 
-          h2.textContent = `My Contacts`;          
-     }
- };   
+const contactPage = () => {
+          const greetingMsg = document.querySelector('.greetingMsg')
+          const cHeader = greetingHeader.querySelector('h1'); 
+          cHeader.textContent = 'Welcome To My Contact Page';       
+ }
+ contactPage();
+
+ export { contactPage }; 
+
