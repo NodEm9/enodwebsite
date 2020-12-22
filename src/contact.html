@@ -7,7 +7,6 @@
 </head>
 <body>
   <div class="container">
-  <section class="contact ">
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
       <a class="navbar-brand" href="#"><img  class="img-fluid" src="./assets/m-logo2.jpg" id="brand-logo" alt="logo"></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -29,8 +28,9 @@
           </li>
         </ul>
       </div>
-    </nav>       
-  <div>
+    </nav>  
+<section class="contact">     
+<div>
 <!--Social Icons-->
 <ul class="mt-5" style="float: right;">
           <a href=""> <i class="fab far-2 fa-github-square"></i></a>
@@ -39,28 +39,28 @@
              <a href=""><i class="fab far-2 fa-instagram-square"></i></a>
       </ul>
 <!--Form section-->      
-    <section >
-          <div class="row">
-          <div class="col-md-12">
-          <div>
+<section>
+  <div class="row">
+    <div class="col-md-12">
+      <div class="greetingMsg">
           <h1 class="c-heading text-center mt-1">Wecome to ContactMe</h1><br><br>
-     </div>
+      </div>
           <div>
           <p class="c-heading-1 text-center ">I'm humbled to recieve your call/contact message.</p>
-   </div>
+        </div>
  </div>
 </div>
-          <div class="row">
-          <div class="col-md-8">
-          <form class="form">
-             <label class="input-group" for="uername">Sender</label>
-            <input type="text" class="form-control" required>
+<div class="row">
+<div class="col-md-8">
+      <form class="form">
+             <label class="input-group" for="sender">Sender</label>
+            <input type="text" class="form-control" id="sender" required>
             <label class="input-group" for="email">Email</label>
-            <input type="email" class="form-control" required>
+            <input type="email" class="form-control" id="email" required>
             <label class="input-group" for="subject">Subject</label>
-            <input type="text" class="form-control" required>
-            <label class="input-group" for="">Message</label>
-            <textarea class="form-control" name="message" id="" cols="30" rows="10"></textarea>
+            <input type="text" class="form-control" id="msgSubject" required>
+            <label class="input-group" for="message">Message</label>
+            <textarea class="form-control" name="message" id="msgContent" cols="30" rows="10"></textarea>
 
             <button type="submit" class="btn btn-primary"><i class="fas fa-paper-plane"></i>Send Message</button>
           </form>
