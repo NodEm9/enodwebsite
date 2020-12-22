@@ -1,0 +1,75 @@
+@import  '~bootstrap/scss/bootstrap';
+@import 'config';
+
+.project { 
+  background: $secondary-color;
+  margin:  0 auto;
+  padding: 0;
+  text-align: center;
+  background-size: cover;
+  @include font-face;
+  #p {
+  font-weight: 700;
+  font-size: 38px;
+  font-family: 'Courier New', Courier, monospace;
+  padding-top: 1em;
+}  
+  .c-heading{
+    padding-top: 2rem;
+}
+  .from, form {
+    margin: 0 auto;
+    padding-right: rem;
+    padding-bottom: 5rem;
+                  
+}
+  button {
+    width: 15vw;
+    margin-top: 1rem;
+ }
+
+}
+.navbar-nav{
+  font-weight: 700;
+  font-size: 1rem;
+ .nav-item {
+  padding: 2px 50px 2px; 
+  display: inline-block;
+  .nav-link{
+    @include transition-ease;
+  a:hover{
+    color: $color;
+  }
+  }
+ }
+}
+#brand-logo {
+  width: 40px; 
+  height: 30px;
+}
+    
+.projects_items{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+    .project_item{
+    position: relative;
+    flex-direction: column;
+    margin-bottom: 4rem;
+    }
+  .project_img{
+   width: 20rem;
+   height: 250px;
+   flex-direction: column;
+   border-right: 5px solid;
+   border-bottom: 5px solid;
+  }
+  .projects__btns {
+   flex-direction: column;
+   line-height: 1;
+   margin-top: 1rem;
+   grid-template-columns: (2, 1fr);
+  }
+ }
+
+
+
