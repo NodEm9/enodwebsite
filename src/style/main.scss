@@ -1,9 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 @import  '~bootstrap/scss/bootstrap';
-@import 'config';  
+@import 'config'; 
 
-  .home {
-    background: url('/src/assets/model-seaside.jpg');
-    background-size: cover;    
+
+  .home {   
     padding-bottom: 2rem;
     text-align: center;
     font-weight: 700;
@@ -16,8 +16,46 @@
        margin-top: 1rem;
        margin-bottom: 3rem;
        display: inline-block;
+       box-shadow: 6px 6px 6px rgb(110, 1, 1);
     }
-  .title {
+    #card1 {
+      background: darken($color: #66667667, $amount: 0);
+    }
+    #card2 {
+      width: 35vw;
+      background: url('../assets/project-images/edonuyidashbord.jpg');
+      background-size: cover;
+      font: bold;
+    }
+    
+.navbar-nav{
+  font-weight: 700;
+  font-size: 1rem;
+  margin: 0 auto;
+ .nav-item {
+  padding: 2px 50px 2px; 
+  display: inline-block;
+  .nav-link{
+    @include transition-ease;
+  a:hover{
+    color: $color;
+  }
+  }
+ }
+}
+#brand-logo {
+  width: 20px; 
+  height: 30px;
+  margin-bottom: 1rem;
+}
+// header {
+//     background: url('/src/assets/project-images/edonuyidashbord.jpg') center;
+//     background-size: cover;
+//     color: $primary-color;
+//     min-height: 35vh;
+
+// }
+  #title {
     font-size: 3rem;
     padding: 6px 12px;
     padding-top: 1em;
@@ -50,14 +88,14 @@ h1 {
  
   }
 }
-/*img { 
-  width: 400px;
-  margin: auto;
-  perspective: floor($number: 3);  
- }*/
- #brand-logo {
+#brand-logo {
   width: 40px;
-
+} 
+.social-icon {
+  float: right; 
+  padding: 30px;
+  width: 30px;
+  color: transparent;
 }
 #p {
   font-weight: 700;
@@ -69,6 +107,7 @@ h1 {
    padding-right: 0rem;
    padding-bottom: 1rem;
 }
+
 button {
  width: 15vw;
  margin-top: 1rem;
@@ -91,22 +130,4 @@ footer{
   opacity: 0px;
    }
   }
-}
-.navbar-nav{
-  font-weight: 700;
-  font-size: 1rem;
- .nav-item {
-  padding: 2px 50px 2px; 
-  display: inline-block;
-  .nav-link{
-    @include transition-ease;
-  a:hover{
-    color: $color;
-  }
-  }
- }
-}
-#brand-logo {
-  width: 40px; 
-  height: 30px;
 }
