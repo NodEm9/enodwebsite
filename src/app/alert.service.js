@@ -1,5 +1,5 @@
 
-function alertMessage() {
+function alertMessage() {  
           const html = document.querySelector('html');
 
           const panel = document.createElement('div');
@@ -18,6 +18,4 @@ function alertMessage() {
                     panel.parentNode.removeChild(panel);
           }
 }
-alertMessage(); 
-
-module.exports = alertMessage;
+export { alertMessage };
