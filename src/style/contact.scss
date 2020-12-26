@@ -12,28 +12,35 @@
     font-family: 'Courier New', Courier, monospace;
     padding-top: 1em;
   }  
-.c-heading{
+.greetingMsg{
 margin: 0 auto;
 padding-top: 1rem;
 padding-bottom: 1.5rem;
 }
-.c-heading-1{
+.c-heading1{
   margin: 0 auto;
   padding-top: 0.5rem;
-  padding-bottom: 1rem;
+  padding-bottom: 2rem;
   }
-.form { 
-margin: 0 auto;
-width: 600px; 
-padding-bottom: 5rem;
-z-index: 2;
-font-weight: 700;                
-}
-button {
-width: 10vw;
-margin: auto;
-margin-top: 1rem;
-}
+// .form { 
+// margin: 0 auto;
+// width: 400px; 
+// padding-bottom: 5rem;
+// margin-top: 1.5rem;
+// z-index: 2;
+// font-weight: 700;                
+// }
+#contactInfos {
+  margin-top: 1rem;
+  padding: 1rem;
+  background: $background-sty;
+  margin-bottom: 1rem;
+
+  }
+  .locationMap {
+    border-bottom: 1px solid #66667667;
+    border-top: 1px solid #66667667;
+  }
 }
 .navbar-nav{
   font-weight: 700;
@@ -53,13 +60,6 @@ margin-top: 1rem;
   width: 40px; 
   height: 30px;
 }
-// .social {
-//   margin-top: 3rem;
-//   margin-left: 10rem;
-//   padding: 2px 2px 2px;
-//   float: right;
-//   position: relative;
-// }
 #cDetail {
   &__items {
     float: left;
@@ -69,10 +69,11 @@ margin-top: 1rem;
     }
   }
 }
-#footer-2{
+footer{
   margin-top: 2rem;
   margin-bottom: 0.5rem;
   background: darken($color: #66667667, $amount: 0);
   align-items: center;
   text-align: center;
+  padding: 1rem;
 }
