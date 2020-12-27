@@ -13,11 +13,11 @@ app.use(cors());
 const port = process.env.PORT || 5000;
 
 /**Set the instance of the static file source*/
-app.use(express.static('dist'));
+// app.use(express.static('dist'));
 
 
 app.get('/', (req, res) => {
-          res.send('dist/index.html');
+          // res.send('dist/index.html');
 })
 
 app.listen(port, () => {
@@ -26,11 +26,11 @@ app.listen(port, () => {
 
 /**Get searchData route */
 app.get('/all', (req, res) => {
-          res.send(searchData);
+          // res.send(searchData);
 })
 
 
 app.post('/addSearch', (req, res) => {
           console.log(req.body);
-          
+
 })
