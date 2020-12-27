@@ -1,3 +1,4 @@
+import bootstrap from 'bootstrap';
 //Importing all functions of the siblings files
 import { run } from './app/app';
 import { homePage } from './app/home';
