@@ -4,6 +4,7 @@
 .contact { 
   margin:  0 auto;
   padding: 0;
+  column-count: 2;
   @include font-face;
 
   #p {
@@ -35,7 +36,6 @@ padding-bottom: 1.5rem;
   padding: 1rem;
   background: $background-sty;
   margin-bottom: 1rem;
-
   }
   .locationMap {
     border-bottom: 1px solid #66667667;
@@ -55,11 +55,12 @@ padding-bottom: 1.5rem;
   }
   }
  }
-}
-#brand-logo {
-  width: 40px; 
+ .navbar-brand {
+  width: 40px;
   height: 30px;
 }
+}
+
 #cDetail {
   &__items {
     float: left;
