@@ -14,13 +14,6 @@ const contactPage = () => {
                                     In case we are not available at the moment, Kindly drop us a message
                                     and we will  endeavour to get back to you ASAP. Thank you. `;                                    
  
-          
-                                    
-          const gHpage = document.querySelector('.social__icon');
-
-          gHpage.onclick = function() {
-                    openNewpage(); 
-  }
 }
  contactPage();
 
