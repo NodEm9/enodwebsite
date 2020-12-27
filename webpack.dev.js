@@ -1,13 +1,8 @@
 const path = require("path");
 const { merge } = require('webpack-merge');
 const common = require('./webpack.common');
-const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const CompressionPlugin = require("compression-webpack-plugin");
-const zlib = require('zlib');
-const zopfli = require('@gfx/zopfli');
-
-
+const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 
 module.exports = merge(common, {
           mode: "development",
@@ -17,10 +12,9 @@ module.exports = merge(common, {
           },
           output: {
            filename: "[name].bundle.js",
-           path: path.resolve(__dirname, "dist")        
-          },
-          amd: {
-            jQuery: true
+           path: path.resolve(__dirname, "dist")
+         //   libraryTarget: 'var',
+         //   library: 'Client'
           },
           module: {
              rules: [
@@ -34,37 +28,11 @@ module.exports = merge(common, {
                  }
              ]
           },
-          plugins: [ 
-             new MiniCssExtractPlugin({}),
-             new HtmlWebpackPlugin({
-                template: "./src/template.html"
-             }),
-             new CompressionPlugin ({
-               filename: '[path].gz[query]',
-               algorithm: 'gzip',
-               test: /\.js$|\.css$|\.html$|.hbs$/,
-               threshold: 10240,
-               minRatio: 0.8,
-               algorithm(input, compressionOptions, callback) {
-               return zopfli.gzip(input, compressionOptions, callback);
-             }
-           }),
-           //Multiple compression of assets for different algorithm
-           new CompressionPlugin({
-             filename: '[path].br[query]',
-             algorithm: 'brotliCompress',
-             test: /\.(js|css|html|hbs|svg)$/,
-             compressionOptions: {
-               // zlib’s `level` option matches Brotli’s `BROTLI_PARAM_QUALITY` option.
-               level: 11,
-               numiterations: 15,
-             },
-             threshold: 10240,
-             minRatio: 0.8,
-             deleteOriginalAssets: false,
-             include: /\/(assets\/js|assets\\js|node_modules\\|bower_components\\js)/,
-             cache: false, 
-             cache: 'path/to/cache'
-            }),
-        ]
+          plugins: [
+            new CleanWebpackPlugin({}),
+           new MiniCssExtractPlugin({ 
+            filename: '[name].css',
+            // chunkFilename: '[id].css'
+           })
+          ] 
        });
