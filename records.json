@@ -1,0 +1,230 @@
+{
+  "HtmlWebpackCompiler": [
+    {
+      "modules": {
+        "byIdentifier": {
+          "node_modules/html-loader/dist/runtime/getUrl.js": 0,
+          "node_modules/file-loader/dist/cjs.js??ref--5!src/assets/m-logo2.jpg": 1,
+          "node_modules/file-loader/dist/cjs.js??ref--5!src/assets/20200912_142500.jpg": 2,
+          "node_modules/file-loader/dist/cjs.js??ref--5!src/assets/20200914_224610.jpg": 3,
+          "node_modules/html-webpack-plugin/lib/loader.js!node_modules/html-loader/dist/cjs.js??ref--6!src/index.html": 4,
+          "node_modules/file-loader/dist/cjs.js??ref--5!src/assets/m-logo.png": 5,
+          "node_modules/html-webpack-plugin/lib/loader.js!node_modules/html-loader/dist/cjs.js??ref--6!src/contact.html": 6,
+          "node_modules/html-webpack-plugin/lib/loader.js!node_modules/html-loader/dist/cjs.js??ref--6!src/about.html": 7,
+          "node_modules/file-loader/dist/cjs.js??ref--5!src/assets/my-img.png": 8,
+          "node_modules/html-webpack-plugin/lib/loader.js!node_modules/html-loader/dist/cjs.js??ref--6!src/project.html": 9,
+          "node_modules/file-loader/dist/cjs.js??ref--5!node_modules/file-loader/dist/cjs.js?name=videos/[name].[ext]!src/movie.mp4": 10,
+          "node_modules/file-loader/dist/cjs.js??ref--5!node_modules/file-loader/dist/cjs.js?name=videos/[name].[ext]!src/20200925_120631.ogg": 11,
+          "node_modules/file-loader/dist/cjs.js??ref--5!src/musi-app-img.jpg": 12,
+          "node_modules/file-loader/dist/cjs.js??ref--5!src/assets/project-images/edonuyidashbord.jpg": 13
+        },
+        "usedIds": {
+          "0": 0,
+          "1": 1,
+          "2": 2,
+          "3": 3,
+          "4": 4,
+          "5": 5,
+          "6": 6,
+          "7": 7,
+          "8": 8,
+          "9": 9,
+          "10": 10,
+          "11": 11,
+          "12": 12,
+          "13": 13
+        }
+      },
+      "chunks": {
+        "byName": {
+          "HtmlWebpackPlugin_0": 0,
+          "HtmlWebpackPlugin_1": 1,
+          "HtmlWebpackPlugin_2": 2,
+          "HtmlWebpackPlugin_3": 3
+        },
+        "bySource": {},
+        "usedIds": [
+          0,
+          1,
+          2,
+          3
+        ]
+      }
+    }
+  ],
+  "mini-css-extract-plugin node_modules/css-loader/dist/cjs.js!node_modules/sass-loader/dist/cjs.js!src/style/main.scss": [
+    {
+      "modules": {
+        "byIdentifier": {
+          "node_modules/css-loader/dist/cjs.js!node_modules/sass-loader/dist/cjs.js!src/style/main.scss": 0,
+          "node_modules/css-loader/dist/runtime/api.js": 1,
+          "node_modules/css-loader/dist/runtime/getUrl.js": 2,
+          "node_modules/file-loader/dist/cjs.js??ref--5!src/assets/project-images/edonuyidashbord.jpg": 3
+        },
+        "usedIds": {
+          "0": 0,
+          "1": 1,
+          "2": 2,
+          "3": 3
+        }
+      },
+      "chunks": {
+        "byName": {
+          "mini-css-extract-plugin": 0
+        },
+        "bySource": {},
+        "usedIds": [
+          0
+        ]
+      }
+    }
+  ],
+  "modules": {
+    "byIdentifier": {
+      "node_modules/babel-loader/lib/index.js??ref--4!src/app/home.js": 0,
+      "node_modules/babel-loader/lib/index.js??ref--4!src/app/contact.js": 1,
+      "node_modules/babel-loader/lib/index.js??ref--4!src/app/about.js": 2,
+      "node_modules/bootstrap/dist/js/bootstrap.js": 3,
+      "../../../node_modules/jquery/dist/jquery.js": 4,
+      "node_modules/react/index.js": 5,
+      "node_modules/object-assign/index.js": 6,
+      "node_modules/mini-css-extract-plugin/dist/loader.js!node_modules/css-loader/dist/cjs.js!node_modules/sass-loader/dist/cjs.js!src/style/main.scss": 7,
+      "../../../node_modules/popper.js/dist/esm/popper.js": 8,
+      "node_modules/webpack/buildin/global.js": 9,
+      "node_modules/babel-loader/lib/index.js??ref--4!src/app/projects.js": 10,
+      "node_modules/babel-loader/lib/index.js??ref--4!src/vendor.js": 11,
+      "node_modules/react/cjs/react.production.min.js": 12,
+      "node_modules/react-dom/index.js": 13,
+      "node_modules/react-dom/cjs/react-dom.production.min.js": 14,
+      "node_modules/scheduler/index.js": 15,
+      "node_modules/scheduler/cjs/scheduler.production.min.js": 16,
+      "node_modules/babel-loader/lib/index.js??ref--4!src/index.js 1326e9b9520d72d3fb603a758390e876": 17,
+      "node_modules/babel-loader/lib/index.js??ref--4!src/app/alert.service.js": 18,
+      "node_modules/mini-css-extract-plugin/dist/loader.js!node_modules/css-loader/dist/cjs.js!node_modules/sass-loader/dist/cjs.js!src/style/contact.scss": 19,
+      "node_modules/mini-css-extract-plugin/dist/loader.js!node_modules/css-loader/dist/cjs.js!node_modules/sass-loader/dist/cjs.js!src/style/about.scss": 20,
+      "node_modules/mini-css-extract-plugin/dist/loader.js!node_modules/css-loader/dist/cjs.js!node_modules/sass-loader/dist/cjs.js!src/style/project.scss": 21,
+      "node_modules/babel-loader/lib/index.js??ref--4!src/index.js 8d02dacca1a1941dc839d9de2a795fb9": 17,
+      "node_modules/babel-loader/lib/index.js??ref--4!src/index.js 1943a2493343ed5da79d5bd8f0ec52ca": 17
+    },
+    "usedIds": {
+      "0": 0,
+      "1": 1,
+      "2": 2,
+      "3": 3,
+      "4": 4,
+      "5": 5,
+      "6": 6,
+      "7": 7,
+      "8": 8,
+      "9": 9,
+      "10": 10,
+      "11": 11,
+      "12": 12,
+      "13": 13,
+      "14": 14,
+      "15": 15,
+      "16": 16,
+      "17": 17,
+      "18": 18,
+      "19": 19,
+      "20": 20,
+      "21": 21
+    }
+  },
+  "chunks": {
+    "byName": {
+      "runtime": 0,
+      "vendors": 1,
+      "about": 2,
+      "contact": 3,
+      "home": 4,
+      "main": 5,
+      "project": 6,
+      "vendor": 7,
+      "about~contact~main~project": 8,
+      "about~main": 9,
+      "contact~main": 10
+    },
+    "bySource": {},
+    "usedIds": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ]
+  },
+  "mini-css-extract-plugin node_modules/css-loader/dist/cjs.js!node_modules/sass-loader/dist/cjs.js!src/style/contact.scss": [
+    {
+      "modules": {
+        "byIdentifier": {
+          "node_modules/css-loader/dist/cjs.js!node_modules/sass-loader/dist/cjs.js!src/style/contact.scss": 0,
+          "node_modules/css-loader/dist/runtime/api.js": 1
+        },
+        "usedIds": {
+          "0": 0,
+          "1": 1
+        }
+      },
+      "chunks": {
+        "byName": {
+          "mini-css-extract-plugin": 0
+        },
+        "bySource": {},
+        "usedIds": [
+          0
+        ]
+      }
+    }
+  ],
+  "mini-css-extract-plugin node_modules/css-loader/dist/cjs.js!node_modules/sass-loader/dist/cjs.js!src/style/about.scss": [
+    {
+      "modules": {
+        "byIdentifier": {
+          "node_modules/css-loader/dist/cjs.js!node_modules/sass-loader/dist/cjs.js!src/style/about.scss": 0,
+          "node_modules/css-loader/dist/runtime/api.js": 1
+        },
+        "usedIds": {
+          "0": 0,
+          "1": 1
+        }
+      },
+      "chunks": {
+        "byName": {
+          "mini-css-extract-plugin": 0
+        },
+        "bySource": {},
+        "usedIds": [
+          0
+        ]
+      }
+    }
+  ],
+  "mini-css-extract-plugin node_modules/css-loader/dist/cjs.js!node_modules/sass-loader/dist/cjs.js!src/style/project.scss": [
+    {
+      "modules": {
+        "byIdentifier": {
+          "node_modules/css-loader/dist/cjs.js!node_modules/sass-loader/dist/cjs.js!src/style/project.scss": 0,
+          "node_modules/css-loader/dist/runtime/api.js": 1
+        },
+        "usedIds": {
+          "0": 0,
+          "1": 1
+        }
+      },
+      "chunks": {
+        "byName": {
+          "mini-css-extract-plugin": 0
+        },
+        "bySource": {},
+        "usedIds": [
+          0
+        ]
+      }
+    }
+  ]
+}
