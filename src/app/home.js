@@ -1,9 +1,9 @@
 
 const homePage =() => {
         const home = document.querySelector('.home');
-        let p = home.querySelector('p');
-        p.innerHTML = 'Web Development, Single-page and complex website design.';
- }
+        let pCard = document.querySelector('.card__p');
+        pCard.innerHTML = 'Web Development, Single-page and complex website design.';
+ } 
  homePage();
 
 
@@ -12,6 +12,8 @@ const homePage =() => {
 
  //Add an eventListener with the function 
  socialIcon.addEventListener('click', openNewpage);
+
+ Client.openNewpag();
 
  //Run this function if the icon is clicked
  function openNewpage(evt) {
@@ -23,6 +25,19 @@ const homePage =() => {
          }
  }
  openNewpage();
+
+const searchBox = document.querySelector('.searchBox');
+
+const searchBtn = document.querySelector('.searchBtn');
+
+searchBtn.addEventListener('click', createSerach);
+
+ //
+ function createSerach() {
+        //  const fragment =  document.createDocumentFragment();
+
+
+ }   
 
  //Make sure all functions are exported correctly
  export { homePage, openNewpage };
