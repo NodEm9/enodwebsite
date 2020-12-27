@@ -1,3 +1,4 @@
+const searchData = {};
 
 const express = require('express');
 const cors = require('cors');
@@ -23,6 +24,13 @@ app.listen(port, () => {
           console.log(`Server listening on: ${port}`);
 })   
 
+/**Get searchData route */
 app.get('/all', (req, res) => {
-          res.send();
+          res.send(searchData);
+})
+
+
+app.post('/addSearch', (req, res) => {
+          console.log(req.body);
+          
 })
