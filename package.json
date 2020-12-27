@@ -5,9 +5,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --open --config webpack.dev.js",
+    "start": "node src/server/server.js",
+    "build-dev": "webpack-dev-server --config webpack.dev.js --open",
     "watch": "webpack --watch",
-    "build": "webpack --config webpack.prod.js"
+    "build-prod": "webpack --config webpack.prod.js"
   },
   "keywords": [],
   "author": "Emmanuel Nodolomwanyi",
@@ -16,13 +17,14 @@
     "@babel/core": "^7.10.4",
     "@babel/plugin-transform-runtime": "^7.11.0",
     "@babel/preset-env": "^7.10.4",
-    "@gfx/zopfli": "^1.0.14",
     "babel": "^6.23.0",
     "babel-loader": "^8.1.0",
     "bootstrap": "^4.5.0",
     "clean-webpack-plugin": "^3.0.0",
-    "compression-webpack-plugin": "^4.0.0",
+    "cors": "^2.8.5",
     "css-loader": "^3.6.0",
+    "express": "^4.17.1",
+    "extract-loader": "^5.1.0",
     "file-loader": "^6.0.0",
     "html-loader": "^1.1.0",
     "html-webpack-plugin": "^4.3.0",
@@ -38,7 +40,8 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.11.2",
-    "handlebars": "^4.7.6",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
     "webpack-dev-server": "^3.11.0",
     "webpack-merge": "^5.0.3"
   }
