@@ -11,7 +11,7 @@ import { alertMessage } from './app/alert.service';
 //importing all scss files 
 import './style/main.scss';
 import './style/contact.scss';
-import './style/about.scss';
+import './style/about.scss';    
 import './style/project.scss';
 
 const componentService = new ComponentService();
