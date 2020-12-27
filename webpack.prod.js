@@ -1,28 +1,26 @@
 const path = require("path");
+// const webpack = require('webpack');
 const loader = require("sass-loader");
 const common = require("./webpack.common");
 const { merge } = require('webpack-merge');
 const  { CleanWebpackPlugin }  = require("clean-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const TerserJSPlugin = require("terser-webpack-plugin");
-const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
-const HtmlWebpackPlugin = require("html-webpack-plugin");
-const CompressionPlugin = require('compression-webpack-plugin');
-const zlib = require('zlib');
-const zopfli = require('@gfx/zopfli');
+
 
  
-module.exports = {
+module.exports = merge(common, {
     mode: 'production',
     cache: 'true',
       cache: {
-          type: 'filesystem',
-           
+          type: 'filesystem'
       },
     output: {
          
          filename: '[name].[hash].bundle.js',
-         path: path.resolve(__dirname, 'dist') 
+         path: path.resolve(__dirname, 'dist'),
+         publicPath: 'dist/'
+        // libraryTarget: 'var',
+        // library: 'Client'
     },
     module: {
       rules: [
@@ -37,52 +35,12 @@ module.exports = {
         },
     ]
   },    
-    optimization: {
-          minimizer: [new TerserJSPlugin({}), new OptimizeCSSAssetsPlugin({})],
-          splitChunks: {
-            chunks: 'all',
-           }
-        },
-        amd: {
-          jQuery: true
-        },
-        plugins: [
-          new MiniCssExtractPlugin({ filename: '[name].[hash].css'}),
+    plugins: [
           new CleanWebpackPlugin({}),
-          new HtmlWebpackPlugin({
-               template: './src/template.html',
-               minify: {
-                    removeAttributeQuote: true,
-                    collapseWhitespace: true,
-                    removeComments: true
-                 },
-                 
-             }),
-            new CompressionPlugin ({
-              filename: '[path].gz[query]',
-              algorithm: 'gzip',
-              test: /\.js$|\.css$|\.html$|\.hbs$|\.svg$/,
-              threshold: 10240,
-              minRatio: 0.8,
-              algorithm(input, compressionOptions, callback) {
-              return zopfli.gzip(input, compressionOptions, callback);
-            }
-          }),
-          new CompressionPlugin({
-            filename: '[path].br[query]',
-            algorithm: 'brotliCompress',
-            test: /\.(js|css|html|hbs|svg)$/,
-            compressionOptions: {
-              // zlib’s `level` option matches Brotli’s `BROTLI_PARAM_QUALITY` option.
-              level: 11,
-              numiterations: 15,
-            },
-            threshold: 10240,
-            minRatio: 0.8,
-            deleteOriginalAssets: false,
-            include: /\/includes/,
-            cache: true
-          })
+          new MiniCssExtractPlugin({ 
+               filename: '[name].[contenthash].css',
+               chunkFilename: '[id].[contenthash].css'
+              })
        ]
 
-};
+});
