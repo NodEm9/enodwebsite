@@ -17,10 +17,10 @@ module.exports = merge(common, {
     output: {
          
          filename: '[name].[hash].bundle.js',
-         path: path.resolve(__dirname, 'dist'),
-         publicPath: 'dist/'
-        // libraryTarget: 'var',
-        // library: 'Client'
+        //  path: path.resolve(__dirname, 'dist'),
+        //  publicPath: 'dist/',
+         libraryTarget: 'var',
+         library:        'Client'
     },
     module: {
       rules: [
