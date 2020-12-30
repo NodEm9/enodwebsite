@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
 @import  '~bootstrap/scss/bootstrap';
 @import 'config';
 
@@ -61,46 +63,57 @@ button {
   align-items: flex-end;
   text-align: right;
 }
-#footer-2{
-  margin-top: 2rem;
-  margin-bottom: 0.5rem;
-  background: darken($color: #66667667, $amount: 0);
-  align-items: center;
-  text-align: center;
-}
 .quote-bio{
   background:beige;
   background-origin: padding-box;
   opacity: 4;
-  box-shadow: 4px solid yellowgreen;
+  box-shadow: 4px 4px 4px rgb(110, 1, 1);  
   border-left: 5px solid;
   border-top: 5px solid;
   
-code {
+.card {
   color: green;
-  font-weight: 700;
+  font-weight: 500;
   z-index: 2;
   font-size: 18px;
   text-indent: 0.5%;
   text-align: justify;
   padding: 0.5rem;
+  }
 }
-&__item{
-  border-right: 5px solid;
-  border-left: 5px solid;
-  background: beige;
+.quote-bio1{
+  background:beige;
   background-origin: padding-box;
-  text-indent: 0.5%;
-  text-align: justify;
-  padding: 0.5rem;
+  opacity: 4;
+  box-shadow: 6px 6px 6px rgb(110, 1, 1);  
+  border-left: 5px solid;
+  border-top: 5px solid;
+
+  .card { 
+    color: green;
+    font-weight: 500;
+    z-index: 2;
+    font-size: 18px;
+    text-indent: 0.5%;
+    text-align: justify;
+    padding: 0.5rem;
+  }
 }
-&_item {
+.quote-bio_item {
   border-right: 5px solid;
   border-bottom: 5px solid;
+  font-weight: 500;
   background: beige;
   background-origin: padding-box;
   text-indent: 0.5%;
   text-align: justify;
   padding: 0.5rem;
  }
+ footer{
+  margin-top: 1rem;
+  // margin-bottom: 0.5rem;
+  padding: 1rem;
+  background: darken($color: #66667667, $amount: 0);
+  align-items: center;
+  text-align: center;
 }
