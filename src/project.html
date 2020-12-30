@@ -5,11 +5,11 @@
           <meta name="viewport" content="width=device-width, initial-scale=1.0">
           <title>Document</title>
 </head>
-<body class="container">
+<body>
   <div class="project">
-  <section>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
-      <a class="navbar-brand" href="./index.html"><img  class="img-fluid" src="./assets/m-logo2.jpg" id="brand-logo" alt="logo"></a>
+  <section id="nav-section">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="./index.html">Code Finger</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -32,25 +32,25 @@
       <section>
         <div class="social-icon">
         <ul class="mt-2">
-          <a href=""> <i class="fab far-2 fa-github-square"></i></a>
-          <a href=""> <i class="fab far-2 fa-facebook-square"></i></a>
-           <a href=""> <i class="fab far-2 fa-twitter-square" ></i></a>
-             <a href=""><i class="fab far-2 fa-instagram-square"></i></a>
+          <a href="" class="social__icon1"> <i class="fab far-2 fa-github-square"></i></a>
+          <a href="" class="social__icon2"> <i class="fab fa-linkedin"></i></a>
+          <a href="" class="social__icon3"> <i class="fab far-2 fa-facebook-square"></i></a>
+           <a href="" class="social__icon4"><i class="fab far-2 fa-instagram-square"></i></a>
       </ul>
     </div>
     </section>
     </nav>
-  </section><br><br>  
- 
-    <section>
+  </section> 
+<section class="container">
       <div class="projects_items">
       <div class="backg">
       <div class="project_item">
-        <video id="myVideo" width="320" height="240" controls>
+        <img src="./assets/project-images/weatherjournalapp.jpg" class="project_img" alt="Weather Journal App">
+        <!-- <video id="myVideo" width="320" height="240" controls>
           <source src="movie.mp4" type="video/mp4">
           <source src="20200925_120631.ogg" type="video/ogg">
           Your browser does not support the video tag.
-        </video>
+        </video> -->
       </div>
         <div class="projects__btns">
           <a href="" class="projects__btn btn btn-primary">
@@ -62,8 +62,8 @@
       </div>
     </div>
     <div class="backg">
-    <div class="project_item">
-      <img src="./assets/20200912_142500.jpg" alt="" class="project_img" >        
+    <div class="project_item" id="project_item1">
+      <img src="./assets/20200912_142500.jpg" alt="Weather Journal App" class="project_img" >        
       <div class="projects__btns">
         <a href="" class="projects__btn btn btn-primary">
             <i class="fas fa-eye"></i> Preview
@@ -89,7 +89,7 @@
 </div>
 <div class="backg">
 <div class="project_item">
-  <img src="./assets/project-images/weatherjournalapp.jpg" alt="" class="project_img" >        
+  <img src="./assets/project-images/ExerTracker.jpg" alt="ExerTracker" class="project_img" >        
   <div class="projects__btns">
     <a href="" class="projects__btn btn btn-primary">
         <i class="fas fa-eye"></i> Preview
@@ -127,15 +127,11 @@
 </div>
 </div>
 </section>
-  <section id="footer-2">
-    <footer role="contentinfo">
+<!--Footer-->
+    <footer>
       <p class="other">&copy; 2020</p>
      </footer>
-  </section>
-             
 
-       
-            
         <script src="https://kit.fontawesome.com/f9f9d2cd10.js" crossorigin="anonymous"></script>
 </body>
 </html>
