@@ -1,10 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
 @import  '~bootstrap/scss/bootstrap';
 @import 'config';
 
 .contact { 
   margin:  0 auto;
   padding: 0;
-  column-count: 2;
+  // column-count: 2;
   @include font-face;
 
   #p {
@@ -23,14 +25,6 @@ padding-bottom: 1.5rem;
   padding-top: 0.5rem;
   padding-bottom: 2rem;
   }
-// .form { 
-// margin: 0 auto;
-// width: 400px; 
-// padding-bottom: 5rem;
-// margin-top: 1.5rem;
-// z-index: 2;
-// font-weight: 700;                
-// }
 #contactInfos {
   margin-top: 1rem;
   padding: 1rem;
@@ -78,3 +72,4 @@ footer{
   text-align: center;
   padding: 1rem;
 }
+
