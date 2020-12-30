@@ -1,7 +1,8 @@
+import { bootstrap } from 'bootstrap';
 
 const homePage =() => {
-        const home = document.querySelector('.home');
-        let pCard = document.querySelector('.card__p');
+        const cardText = document.querySelector('.card-text');
+        let pCard = cardText.querySelector('.card__p');
         pCard.innerHTML = 'Web Development, Single-page and complex website design.';
  } 
  homePage();
@@ -11,31 +12,25 @@ const homePage =() => {
  const socialIcon = document.querySelector('.social__icon1');
 
  //Add an eventListener with the function 
- socialIcon.addEventListener('click', openNewpage);
-
-//  Client.openNewpag();
-
- //Run this function if the icon is clicked
- function openNewpage(evt) {
+ socialIcon.addEventListener('click', function openNewpage(evt) {
          evt.preventDefault();
          if(socialIcon) {
                 window.open('https://github.com/NodEm9');     
          }
-         openIinkedinPage();
          
- }
-  function openIinkedinPage(e) {
-        const linkedinIcon = document.querySelector('.social__icon3');
-  
-        linkedinIcon.addEventListener('click', openIinkedinPage);
+ });
+
+ //Select the DOM element for Linkedin icon
+ const linkedinIcon = document.querySelector('.social__icon2');
+
+ linkedinIcon.addEventListener('click', function openIinkedinPage(e) {
         e.preventDefault();
 
         if(linkedinIcon){
               window.open('https://www.linkedin.com/in/emmanuel-nodolomwanyi-60b56246');
         } 
-  }
-  openNewpage();
+  });
 
  //Make sure all functions are exported correctly
- export { homePage, openNewpage };
+ export { homePage };
   
