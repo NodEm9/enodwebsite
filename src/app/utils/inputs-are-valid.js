@@ -1,3 +1,0 @@
-const inputsAreValid = (...input) => {
-  return 
-}

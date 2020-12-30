@@ -7,7 +7,7 @@ function alertMessage() {
           html.appendChild(panel);
           
           const msg = document.createElement('p');
-          msg.textContent = 'This is a message';
+          msg.textContent = 'Error! debugging required!';
           panel.appendChild(msg);
 
           const closeBtn = document.createElement('button');
@@ -18,4 +18,5 @@ function alertMessage() {
                     panel.parentNode.removeChild(panel);
           }
 }
+
 export { alertMessage };

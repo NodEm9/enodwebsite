@@ -16,7 +16,9 @@
           "node_modules/file-loader/dist/cjs.js??ref--5!node_modules/file-loader/dist/cjs.js?name=videos/[name].[ext]!src/movie.mp4": 10,
           "node_modules/file-loader/dist/cjs.js??ref--5!node_modules/file-loader/dist/cjs.js?name=videos/[name].[ext]!src/20200925_120631.ogg": 11,
           "node_modules/file-loader/dist/cjs.js??ref--5!src/musi-app-img.jpg": 12,
-          "node_modules/file-loader/dist/cjs.js??ref--5!src/assets/project-images/edonuyidashbord.jpg": 13
+          "node_modules/file-loader/dist/cjs.js??ref--5!src/assets/project-images/edonuyidashbord.jpg": 13,
+          "node_modules/file-loader/dist/cjs.js??ref--5!src/assets/project-images/weatherjournalapp.jpg": 5,
+          "node_modules/file-loader/dist/cjs.js??ref--5!src/assets/project-images/ExerTracker.jpg": 1
         },
         "usedIds": {
           "0": 0,
@@ -104,7 +106,8 @@
       "node_modules/mini-css-extract-plugin/dist/loader.js!node_modules/css-loader/dist/cjs.js!node_modules/sass-loader/dist/cjs.js!src/style/about.scss": 20,
       "node_modules/mini-css-extract-plugin/dist/loader.js!node_modules/css-loader/dist/cjs.js!node_modules/sass-loader/dist/cjs.js!src/style/project.scss": 21,
       "node_modules/babel-loader/lib/index.js??ref--4!src/index.js 8d02dacca1a1941dc839d9de2a795fb9": 17,
-      "node_modules/babel-loader/lib/index.js??ref--4!src/index.js 1943a2493343ed5da79d5bd8f0ec52ca": 17
+      "node_modules/babel-loader/lib/index.js??ref--4!src/index.js 1943a2493343ed5da79d5bd8f0ec52ca": 17,
+      "node_modules/babel-loader/lib/index.js??ref--4!src/index.js 8e4ba1229ee84daa6120e96532147ad9": 17
     },
     "usedIds": {
       "0": 0,
