@@ -13,11 +13,11 @@ app.use(cors());
 const port = process.env.PORT || 5000;
 
 /**Set the instance of the static file source*/
-// app.use(express.static('dist'));
+app.use(express.static('dist'));
 
 
 app.get('/', (req, res) => {
-          // res.send('dist/index.html');
+          res.send('dist/index.html');
 })
 
 app.listen(port, () => {
