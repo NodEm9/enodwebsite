@@ -12,9 +12,9 @@ module.exports = merge(common, {
           },
           output: {
            filename: "[name].bundle.js",
-           path: path.resolve(__dirname, "dist")
-         //   libraryTarget: 'var',
-         //   library: 'Client'
+         //   path: path.resolve(__dirname, "dist")
+            libraryTarget: 'var',
+            library:        'Client'
           },
           module: {
              rules: [
