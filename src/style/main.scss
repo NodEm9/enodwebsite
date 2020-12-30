@@ -42,12 +42,12 @@ header {
       background: darken($color: #66667667, $amount: 0);
     }
     #card2 {
-      width: 35vw;
+      // width: 35vw;
       background: url('../assets/project-images/edonuyidashbord.jpg');
       background-size: cover;
       font: bold;
+      color: #ffffff;
     }
-    
 .navbar-nav{
   font-weight: 700;
   font-size: 1rem;
