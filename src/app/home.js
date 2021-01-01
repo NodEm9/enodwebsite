@@ -4,6 +4,49 @@ const homePage =() => {
         const cardText = document.querySelector('.card-text');
         let pCard = cardText.querySelector('.card__p');
         pCard.innerHTML = 'Web Development, Single-page and complex website design.';
+
+        //Select the ul DOM element where the component items
+        // are to be placed in the footer 
+        const itemList = document.querySelector('.item-list');
+
+       //Create a document fragment for the list items
+        const fragment = document.createDocumentFragment();
+
+        //Craete the list with a loop and and setAttribute (class)
+
+         for(let i = 0; i < 4; i++){
+              const listElement = document.createElement('li');
+
+              //attach a function name inside the setting
+              listElement.setAttribute('class', 'componentList') + i;
+
+              const anchorElement = document.createElement('a');
+              anchorElement.setAttribute('id', 'components', toggle()) + i;
+              listElement.appendChild(anchorElement);
+
+              fragment.appendChild(listElement);
+              
+                     function toggle() {
+                            //Create an array list of th component
+                            let listOfComponents  = ['Home', 'Contact', 'About Me', 'Projects'];
+                            anchorElement.textContent = listOfComponents[i];
+
+                            const para = document.getElementById('pItem');
+
+                            if(listOfComponents){
+                                   
+                                   // document.getElementById('components')[0].setAttribute('href', 'index.html')
+                                   anchorElement.setAttribute('href', 'index.html', listOfComponents[0]);
+                                   anchorElement.setAttribute('href', 'contact.html', listOfComponents[1]);
+                                   anchorElement.setAttribute('href', 'about.html', listOfComponents[2]);
+                                   anchorElement.setAttribute('href', 'project.html', listOfComponents[3]);
+                                   console.log(listOfComponents);
+                            }else{
+                                   para.textContent = 'Cannont set anchor attribute Href';
+                            }
+                      }
+         }
+         itemList.appendChild(fragment);
  } 
  homePage();
 
