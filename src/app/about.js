@@ -6,7 +6,7 @@ import '../style/about.scss';
 const AboutMe = () => {
       const mainSection = document.querySelector('#about-section'); 
       const bioHeading = mainSection.querySelector('#bio-head');
-      bioHeading.nextElementSibling.style.backgroundColor = 'red';
+      bioHeading.nextElementSibling.style.backgroundColor = '#dcdcdc';
      
       const para = document.querySelector('#bio-text');
            para.textContent = `Committed, dedicated, focued and full of fun, as well. I am a team player and 
