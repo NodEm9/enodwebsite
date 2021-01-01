@@ -10,7 +10,7 @@ app.use(cors());
 // const formData = require('../app/contact');
 
 
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 4000;
 
 /**Set the instance of the static file source*/
 app.use(express.static('dist'));
