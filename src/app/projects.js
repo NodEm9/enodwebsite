@@ -3,10 +3,10 @@ import { bootstrap } from 'bootstrap';
 import '../style/main.scss'; 
 import '../style/project.scss';
 
-const section = document.querySelector('.container');
+const section = document.querySelector('#project-assets');
 
 
-const allProject = () => {
+const allProject = () => { 
   //create a div for where to place the h1
   const div = document.createElement('div');
 
