@@ -6,13 +6,11 @@ const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 
 module.exports = merge(common, {
           mode: "development",
-          cache: 'true',
           cache: {
               type: 'memory'
           },
           output: {
            filename: "[name].bundle.js",
-         //   path: path.resolve(__dirname, "dist")
             libraryTarget: 'var',
             library:        'Client'
           },
