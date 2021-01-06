@@ -10,15 +10,12 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
  
 module.exports = merge(common, {
     mode: 'production',
-    cache: 'true',
       cache: {
           type: 'filesystem'
       },
     output: {
          
          filename: '[name].[hash].bundle.js',
-        //  path: path.resolve(__dirname, 'dist'),
-        //  publicPath: 'dist/',
          libraryTarget: 'var',
          library:        'Client'
     },
