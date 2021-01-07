@@ -3,7 +3,6 @@ import { bootstrap } from 'bootstrap';
 import '../style/main.scss';  
 import '../style/contact.scss';
 
-
 const mainHeading = document.querySelector('.c-heading'); 
 const cHeader1 = document.querySelector('.c-heading1');
 
@@ -12,12 +11,11 @@ const cHeader1 = document.querySelector('.c-heading1');
 const contactPage = () => {
           //Add a new text to heading 
           mainHeading.textContent = 'Welcome to Contacts'; 
-          console.log(cHeader)
           
           cHeader1.textContent = `Reach us today, with any contact medium convinient to you. 
                     Call or email us and we will endeavour to get back to you ASAP. Thank you.`;
 
-                    console.log(cHeader1)         
+                    console.log(cHeader1)          
 }
  contactPage();
 
