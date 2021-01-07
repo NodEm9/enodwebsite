@@ -3,10 +3,11 @@ import { bootstrap } from 'bootstrap';
 import '../style/main.scss'; 
 import '../style/project.scss';
 
-const section = document.querySelector('#project-assets');
 
 
 const allProject = () => { 
+  const section = document.querySelector('#project-assets');
+
   //create a div for where to place the h1
   const div = document.createElement('div');
 
@@ -18,7 +19,7 @@ const allProject = () => {
   //and append it as child of the div
    const h1 = document.createElement('h1');
    h1.setAttribute('id', 'main-heading');
-   h1.textContent = 'Welcome to Portfolio';
+   h1.textContent = 'Welcome to Projects and Porfolio';
    div.appendChild(h1);
 }
 allProject();
