@@ -43,8 +43,7 @@ module.exports = {
                     loader: 'html-loader', 
                          options: {
                             minimize: true,
-                            attributes: true,
-                                                   
+                            attributes: true,                           
                      }
                },
                {
