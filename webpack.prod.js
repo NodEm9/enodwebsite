@@ -15,7 +15,7 @@ module.exports = merge(common, {
       },
     output: {
          
-         filename: '[name].[hash].bundle.js',
+         filename: '[name].[contenthash].bundle.js',
          libraryTarget: 'var',
          library:        'Client'
     },
